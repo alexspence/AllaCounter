@@ -1,9 +1,0 @@
-c:\users\alexander\documents\visual studio 2013\Projects\AllaCounter\AllaCounter\bin\Debug\AllaCounter.exe.config
-c:\users\alexander\documents\visual studio 2013\Projects\AllaCounter\AllaCounter\bin\Debug\AllaCounter.exe
-c:\users\alexander\documents\visual studio 2013\Projects\AllaCounter\AllaCounter\bin\Debug\AllaCounter.pdb
-c:\users\alexander\documents\visual studio 2013\Projects\AllaCounter\AllaCounter\obj\Debug\AllaCounter.csprojResolveAssemblyReference.cache
-c:\users\alexander\documents\visual studio 2013\Projects\AllaCounter\AllaCounter\obj\Debug\AllaCounter.Form1.resources
-c:\users\alexander\documents\visual studio 2013\Projects\AllaCounter\AllaCounter\obj\Debug\AllaCounter.Properties.Resources.resources
-c:\users\alexander\documents\visual studio 2013\Projects\AllaCounter\AllaCounter\obj\Debug\AllaCounter.csproj.GenerateResource.Cache
-c:\users\alexander\documents\visual studio 2013\Projects\AllaCounter\AllaCounter\obj\Debug\AllaCounter.exe
-c:\users\alexander\documents\visual studio 2013\Projects\AllaCounter\AllaCounter\obj\Debug\AllaCounter.pdb

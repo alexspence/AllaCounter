@@ -15,6 +15,7 @@ namespace AllaCounter {
 		[DllImport("user32.dll")]
 		public static extern bool UnregisterHotKey(IntPtr hWnd, int id);
 		const int MyactionHotkeyId = 1;
+		private Counter _counter;
 
 		/// <summary>
 		/// Clean up any resources being used.
@@ -24,9 +25,22 @@ namespace AllaCounter {
 			if (disposing && (components != null)) {
 				components.Dispose();
 			}
+
+			if (disposing)
+			{
+				UnregisterHotKey(this.Handle, MyactionHotkeyId);
+
+				if (_counter != null)
+				{
+					_counter.Dispose();
+					_counter = null;
+				}
+			}
+
 			base.Dispose(disposing);
 
-			UnregisterHotKey(this.Handle, MyactionHotkeyId);
+			
+
 		}
 
 		#region Windows Form Designer generated code
@@ -36,33 +50,38 @@ namespace AllaCounter {
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
-			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+			this.label1 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
-			// numericUpDown1
+			// label1
 			// 
-			this.numericUpDown1.Location = new System.Drawing.Point(12, 12);
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-			this.numericUpDown1.TabIndex = 0;
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Arial", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.Yellow;
+			this.label1.Location = new System.Drawing.Point(28, 24);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(83, 36);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "1024";
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(158, 52);
-			this.Controls.Add(this.numericUpDown1);
+			this.BackColor = System.Drawing.Color.Black;
+			this.ClientSize = new System.Drawing.Size(141, 84);
+			this.Controls.Add(this.label1);
 			this.Name = "Form1";
 			this.Text = "Form1";
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
 		#endregion
 
-		private System.Windows.Forms.NumericUpDown numericUpDown1;
+		private Label label1;
+
 	}
 }
 
